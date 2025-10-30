@@ -1,0 +1,220 @@
+[
+  {
+    "id": 1,
+    "name": "Cornflour 1Kg",
+    "description": "Cornflour 1Kg",
+    "price": 100,
+    "qtyOptions": [ "1 Kg", "2 Kg", "5 Kg", "10 Kg", "1 Bag", "2 Bag", "5 Bag", "10 Bag" ],
+    "image": "path/to/jeera-image.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Almonds",
+    "description": "Premium almonds",
+    "price": 500,
+    "image": "path/to/almonds-image.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Cashews",
+    "description": "Fresh cashews",
+    "price": 400,
+    "image": "path/to/cashews-image.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Jeera",
+    "description": "High quality jeera",
+    "price": 100,
+    "image": "path/to/jeera-image.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Almonds",
+    "description": "Premium almonds",
+    "price": 500,
+    "image": "path/to/almonds-image.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Cashews",
+    "description": "Fresh cashews",
+    "price": 400,
+    "image": "path/to/cashews-image.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Almonds",
+    "description": "Premium almonds",
+    "price": 500,
+    "image": "path/to/almonds-image.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Cashews",
+    "description": "Fresh cashews",
+    "price": 400,
+    "image": "path/to/cashews-image.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Jeera",
+    "description": "High quality jeera",
+    "price": 100,
+    "image": "path/to/jeera-image.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Almonds",
+    "description": "Premium almonds",
+    "price": 500,
+    "image": "path/to/almonds-image.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Cashews",
+    "description": "Fresh cashews",
+    "price": 400,
+    "image": "path/to/cashews-image.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Almonds",
+    "description": "Premium almonds",
+    "price": 500,
+    "image": "path/to/almonds-image.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Cashews",
+    "description": "Fresh cashews",
+    "price": 400,
+    "image": "path/to/cashews-image.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Jeera",
+    "description": "High quality jeera",
+    "price": 100,
+    "image": "path/to/jeera-image.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Almonds",
+    "description": "Premium almonds",
+    "price": 500,
+    "image": "path/to/almonds-image.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Cashews",
+    "description": "Fresh cashews",
+    "price": 400,
+    "image": "path/to/cashews-image.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Almonds",
+    "description": "Premium almonds",
+    "price": 500,
+    "image": "path/to/almonds-image.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Cashews",
+    "description": "Fresh cashews",
+    "price": 400,
+    "image": "path/to/cashews-image.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Jeera",
+    "description": "High quality jeera",
+    "price": 100,
+    "image": "path/to/jeera-image.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Almonds",
+    "description": "Premium almonds",
+    "price": 500,
+    "image": "path/to/almonds-image.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Cashews",
+    "description": "Fresh cashews",
+    "price": 400,
+    "image": "path/to/cashews-image.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Almonds",
+    "description": "Premium almonds",
+    "price": 500,
+    "image": "path/to/almonds-image.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Cashews",
+    "description": "Fresh cashews",
+    "price": 400,
+    "image": "path/to/cashews-image.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Jeera",
+    "description": "High quality jeera",
+    "price": 100,
+    "image": "path/to/jeera-image.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Almonds",
+    "description": "Premium almonds",
+    "price": 500,
+    "image": "path/to/almonds-image.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Cashews",
+    "description": "Fresh cashews",
+    "price": 400,
+    "image": "path/to/cashews-image.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Almonds",
+    "description": "Premium almonds",
+    "price": 500,
+    "image": "path/to/almonds-image.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Cashews",
+    "description": "Fresh cashews",
+    "price": 400,
+    "image": "path/to/cashews-image.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Jeera",
+    "description": "High quality jeera",
+    "price": 100,
+    "image": "path/to/jeera-image.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Almonds",
+    "description": "Premium almonds",
+    "price": 500,
+    "image": "path/to/almonds-image.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Cashews",
+    "description": "Fresh cashews",
+    "price": 400,
+    "image": "path/to/cashews-image.jpg"
+  }
+]

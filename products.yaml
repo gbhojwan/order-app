@@ -1,0 +1,630 @@
+qtyOptionsSets:
+  - name : everestMilkMasalaPack
+    qtyTypeOptions:
+    - qtyType: Box
+      qtyValues: [1, 2, 3, 4, 5]
+  - name : everest50gPack
+    qtyTypeOptions:
+    - qtyType: pcs
+      qtyValues: [5, 10, 20, 30, 40, 50, 60]
+    - qtyType: Box
+      qtyValues: [1, 2, 3, 4, 5]
+  - name : everest200gPack
+    qtyTypeOptions:
+    - qtyType: gms
+      qtyValues: [200, 400, 600, 800]
+    - qtyType: Kg
+      qtyValues: [1, 2, 3, 4, 5, 6, 10]
+    - qtyType: Box
+      qtyValues: [1, 2, 3, 4, 5]
+  - name : everest200gPackMinKg
+    qtyTypeOptions:
+    - qtyType: Kg
+      qtyValues: [1, 2, 3, 4, 5, 6, 10]
+    - qtyType: Box
+      qtyValues: [1, 2, 3, 4, 5]
+  - name : everest500gPack
+    qtyTypeOptions:
+    - qtyType: gms
+      qtyValues: [500]
+    - qtyType: Kg
+      qtyValues: [1, 2, 2.5, 3, 4, 5, 6, 10]
+    - qtyType: Box
+      qtyValues: [1, 2, 3, 4, 5]
+  - name : everestMrp10Pack
+    qtyTypeOptions:
+    - qtyType: Hanger
+      qtyValues: [1, 2, 3, 4, 5, 6, 10]
+    - qtyType: Box
+      qtyValues: [1, 2, 3, 4, 5]
+  - name : ambari100gPack
+    qtyTypeOptions:
+    - qtyType: Kg
+      qtyValues: [1, 2, 3, 4]
+    - qtyType: Bag
+      qtyValues: [1, 2, 3, 4, 5]
+  - name : ambariMrp10Pack
+    qtyTypeOptions:
+    - qtyType: packet
+      qtyValues: [1, 2, 3, 4, 5]
+    - qtyType: Box
+      qtyValues: [1, 2, 3, 4, 5]
+  - name : gajgouri1KgPack
+    qtyTypeOptions:
+    - qtyType: Kg
+      qtyValues: [1, 2, 3, 4, 5, 6, 10,15]
+    - qtyType: Box
+      qtyValues: [1, 2, 3, 4, 5]
+  - name : navkarBottlePack
+    qtyTypeOptions:
+    - qtyType: pcs
+      qtyValues: [1, 2, 3, 4, 5, 6, 10, 12]
+    - qtyType: Box
+      qtyValues: [1, 2, 3, 4, 5]
+  - name : navkarCanPack
+    qtyTypeOptions:
+    - qtyType: pcs
+      qtyValues: [1, 2, 3]
+    - qtyType: Box
+      qtyValues: [1, 2, 3, 4, 5]
+  - name : chingsMasala10Pack
+    qtyTypeOptions:
+    - qtyType: packet
+      qtyValues: [1, 2, 3, 4, 5]
+    - qtyType: Box
+      qtyValues: [1, 2, 3, 4, 5]
+  - name : chingsMasala250gPack
+    qtyTypeOptions:
+    - qtyType: pcs
+      qtyValues: [1, 2, 3, 4, 5, 6, 7, 8 , 9, 10, 11, 12]
+    - qtyType: Box
+      qtyValues: [1, 2]
+  - name : sj250gPack
+    qtyTypeOptions:
+    - qtyType: pcs
+      qtyValues: [1, 2, 3, 4, 5, 6, 7, 8 , 9, 10, 11, 12, 15, 20, 25, 30]
+    - qtyType: Box
+      qtyValues: [1, 2]
+  - name : starZing500gPack
+    qtyTypeOptions:
+    - qtyType: Kg
+      qtyValues: [1, 2, 3, 4, 5, 6, 10]
+    - qtyType: Bag
+      qtyValues: [1, 2, 3, 4, 5]
+  - name : genericKgPack
+    qtyTypeOptions:
+    - qtyType: Kg
+      qtyValues: [1, 2, 3, 4, 5, 6, 10]
+    - qtyType: Bag
+      qtyValues: [1, 2, 3, 4, 5]
+products:
+  - name : Meat Masala
+    hName: मटन मसाला
+    brand: Everest Masale
+    options:
+      - option: 5 ₹
+        qtyOptionsRef: everestMrp10Pack
+      - option: 10 ₹
+        qtyOptionsRef: everestMrp10Pack
+      - option: 50g
+        qtyOptionsRef: everest50gPack
+      - option: 200g
+        qtyOptionsRef: everest200gPack
+      - option: 500g
+        qtyOptionsRef: everest500gPack      
+  - name: Shahi Biryani Masala
+    hName: शाही बिरयानी मसाला
+    brand: Everest Masale
+    options:
+      - option: 10 ₹
+        qtyOptionsRef: everestMrp10Pack
+      - option: 25g
+        qtyOptionsRef: everest50gPack
+      - option: 50g
+        qtyOptionsRef: everest50gPack
+      - option: 200g
+        qtyOptionsRef: everest200gPack
+  - name: Kitchen King Masala
+    hName: किचन किंग मसाला
+    brand: Everest Masale
+    options:
+      - option: 10 ₹
+        qtyOptionsRef: everestMrp10Pack
+      - option: 50g
+        qtyOptionsRef: everest50gPack
+      - option: 200g
+        qtyOptionsRef: everest200gPack
+  - name: Super Garam Masala
+    hName: सुपर गरम मसाला
+    brand: Everest Masale
+    options:
+      - option: 200g
+        qtyOptionsRef: everest200gPack
+  - name: Garam Masala
+    hName: गरम मसाला
+    brand: Everest Masale
+    options:
+      - option: 10 ₹
+        qtyOptionsRef: everestMrp10Pack
+      - option: 50g
+        qtyOptionsRef: everest50gPack
+      - option: 200g
+        qtyOptionsRef: everest200gPack
+  - name: Chicken Masala
+    hName: चिकन मसाला
+    brand: Everest Masale
+    options:
+      - option: 5 ₹
+        qtyOptionsRef: everestMrp10Pack
+      - option: 10 ₹
+        qtyOptionsRef: everestMrp10Pack
+      - option: 50g
+        qtyOptionsRef: everest50gPack
+      - option: 200g
+        qtyOptionsRef: everest200gPack
+  - name: Tandoori Chicken Masala
+    hName: तंदूरी चिकन मसाला
+    brand: Everest Masale
+    options:
+      - option: 50g
+        qtyOptionsRef: everest50gPack
+      - option: 200g
+        qtyOptionsRef: everest200gPack
+  - name: Chicken Biryani Masala
+    hName: चिकन बिरयानी मसाला
+    brand: Everest Masale
+    options:
+      - option: 10 ₹
+        qtyOptionsRef: everestMrp10Pack
+      - option: 50g
+        qtyOptionsRef: everest50gPack
+  - name: Chat Masala
+    hName: चाट मसाला
+    brand: Everest Masale
+    options:
+      - option: 10 ₹
+        qtyOptionsRef: everestMrp10Pack
+      - option: 50g
+        qtyOptionsRef: everest50gPack
+      - option: 200g
+        qtyOptionsRef: everest200gPack
+  - name: Pav Bhaji Masala
+    hName: पाव भाजी मसाला
+    brand: Everest Masale
+    options:
+      - option: 10 ₹
+        qtyOptionsRef: everestMrp10Pack
+      - option: 50g
+        qtyOptionsRef: everest50gPack
+      - option: 200g
+        qtyOptionsRef: everest200gPack
+  - name: Sambar Masala
+    hName: सांबर मसाला
+    brand: Everest Masale
+    options:
+      - option: 10 ₹
+        qtyOptionsRef: everestMrp10Pack
+      - option: 50g
+        qtyOptionsRef: everest50gPack
+      - option: 200g
+        qtyOptionsRef: everest200gPack
+  - name: Chhole Masala
+    hName: छोले मसाला
+    brand: Everest Masale
+    options:
+      - option: 10 ₹
+        qtyOptionsRef: everestMrp10Pack
+      - option: 50g
+        qtyOptionsRef: everest50gPack
+      - option: 200g
+        qtyOptionsRef: everest200gPack
+  - name: Sabji Masala
+    hName: सब्जी मसाला
+    brand: Everest Masale
+    options:
+      - option: 10 ₹
+        qtyOptionsRef: everestMrp10Pack
+      - option: 50g
+        qtyOptionsRef: everest50gPack
+      - option: 200g
+        qtyOptionsRef: everest200gPack
+  - name: Shahi Paneer Masala
+    hName: शाही पनीर मसाला
+    brand: Everest Masale
+    options:
+      - option: 10 ₹
+        qtyOptionsRef: everestMrp10Pack
+      - option: 50g
+        qtyOptionsRef: everest50gPack
+  - name: Pani Puri Masala
+    hName: पानी पुरी मसाला
+    brand: Everest Masale
+    options:
+      - option: 10 ₹
+        qtyOptionsRef: everestMrp10Pack
+      - option: 50g
+        qtyOptionsRef: everest50gPack
+  - name : Haldi Powder
+    hName: हल्दी पाउडर
+    brand: Everest Powder
+    options:
+      - option: 10 ₹
+        qtyOptionsRef: everestMrp10Pack
+      - option: 100g
+        qtyOptionsRef: everest200gPackMinKg
+      - option: 200g
+        qtyOptionsRef: everest200gPackMinKg
+      - option: 500g
+        qtyOptionsRef: everest500gPack
+  - name : Tikhalal Mirchi Powder
+    hName: तिखालाल मिर्च पाउडर
+    brand: Everest Powder
+    options:
+      - option: 10 ₹
+        qtyOptionsRef: everestMrp10Pack
+      - option: 100g
+        qtyOptionsRef: everest200gPackMinKg
+      - option: 200g
+        qtyOptionsRef: everest200gPackMinKg
+      - option: 500g
+        qtyOptionsRef: everest500gPack
+  - name : Coriander Powder
+    hName: धनिया पाउडर
+    brand: Everest Powder
+    options:
+      - option: 10 ₹
+        qtyOptionsRef: everestMrp10Pack
+      - option: 100g
+        qtyOptionsRef: everest200gPackMinKg
+      - option: 200g
+        qtyOptionsRef: everest200gPackMinKg
+      - option: 500g
+        qtyOptionsRef: everest500gPack
+  - name : Kashmiri Mirchi Powder
+    hName: कश्मीरी मिर्च पाउडर
+    brand: Everest Powder
+    options:
+      - option: 10 ₹
+        qtyOptionsRef: everestMrp10Pack
+      - option: 50g
+        qtyOptionsRef: everest50gPack
+      - option: 100g
+        qtyOptionsRef: everest50gPack
+  - name : Kasoori Methi
+    hName: कसूरी मेथी
+    brand: Everest Powder
+    options:
+      - option: 25g
+        qtyOptionsRef: everest50gPack
+      - option: 500g
+        qtyOptionsRef: everest500gPack
+  - name: Jaljeera Powder
+    hName: जलजीरा पाउडर
+    brand: Everest Powder
+    options:
+      - option: 50g
+        qtyOptionsRef: everest50gPack
+      - option: 100g
+        qtyOptionsRef: everest50gPack
+  - name: Jeera Powder
+    hName: जीरा पाउडर
+    brand: Everest Powder
+    options:
+      - option: 10 ₹
+        qtyOptionsRef: everestMrp10Pack
+      - option: 50g
+        qtyOptionsRef: everest50gPack
+  - name: Tea Masala
+    hName: चाय मसाला
+    brand: Everest Masale
+    options:
+      - option: 25g
+        qtyOptionsRef: everest50gPack
+      - option: 50g
+        qtyOptionsRef: everest50gPack
+  - name: Milk Masala
+    hName: दूध मसाला
+    brand: Everest Masale
+    options:
+      - option: 10g
+        qtyOptionsRef: everestMilkMasalaPack
+  - name: Dry Mango Powder
+    hName: अमचूर पाउडर
+    brand: Everest Powder
+    options:
+      - option: 50g
+        qtyOptionsRef: everest50gPack
+  - name: Black Pepper Powder
+    hName: काली मिर्च पाउडर
+    brand: Everest Powder
+    options:
+      - option: 50g
+        qtyOptionsRef: everest50gPack
+  - name: Dry Ginger Powder
+    hName: सोंठ पाउडर
+    brand: Everest Powder
+    options:
+      - option: 50g
+        qtyOptionsRef: everest50gPack
+  - name : Mirchi Powder
+    hName: मिर्च पाउडर
+    brand: Ambari
+    options:
+      - option: 5 ₹
+        qtyOptionsRef: ambariMrp10Pack
+      - option: 10 ₹
+        qtyOptionsRef: ambariMrp10Pack
+      - option: 100g
+        qtyOptionsRef: ambari100gPack
+      - option: 200g
+        qtyOptionsRef: ambari100gPack
+      - option: 500g
+        qtyOptionsRef: ambari100gPack
+  - name : Kanda Lasun Masala
+    hName: कांदा लसून मसाला
+    brand: Ambari
+    options:
+      - option: 5 ₹
+        qtyOptionsRef: ambariMrp10Pack
+      - option: 10 ₹
+        qtyOptionsRef: ambariMrp10Pack
+      - option: 100g
+        qtyOptionsRef: ambari100gPack
+      - option: 200g
+        qtyOptionsRef: ambari100gPack
+      - option: 500g
+        qtyOptionsRef: ambari100gPack
+  - name : Haldi Powder
+    hName: हल्दी पाउडर
+    brand: Ambari
+    options:
+      - option: 200g
+        qtyOptionsRef: ambari100gPack
+      - option: 500g
+        qtyOptionsRef: ambari100gPack
+  - name : Mirchi Powder
+    hName: मिर्च पाउडर
+    brand: Gajgouri
+    options:
+      - option: 1 Kg
+        qtyOptionsRef: gajgouri1KgPack
+  - name : Haldi Powder
+    hName: हल्दी पाउडर
+    brand: Gajgouri
+    options:
+      - option: 1 Kg
+        qtyOptionsRef: gajgouri1KgPack
+  - name : Kanda Lasun Masala
+    hName: कांदा लसून मसाला
+    brand: Gajgouri
+    options:
+      - option: 1 Kg
+        qtyOptionsRef: gajgouri1KgPack
+  - name : Tea Powder
+    hName: चाय पाउडर
+    brand: Gajgouri
+    options:
+      - option: 1 Kg
+        qtyOptionsRef: gajgouri1KgPack
+  - name : Soya Sauce
+    hName: सोया सॉस
+    brand: Navkar
+    options:
+      - option: Bottle
+        qtyOptionsRef: navkarBottlePack
+      - option: Can
+        qtyOptionsRef: navkarCanPack
+  - name : Chilly Sauce
+    hName: चिली सॉस
+    brand: Navkar
+    options:
+      - option: Bottle
+        qtyOptionsRef: navkarBottlePack
+      - option: Can
+        qtyOptionsRef: navkarCanPack
+  - name : Snacks Sauce
+    hName: स्नैक सॉस
+    brand: Navkar
+    options:
+      - option: Bottle
+        qtyOptionsRef: navkarBottlePack
+      - option: Can
+        qtyOptionsRef: navkarCanPack
+  - name : Green Chilly Sauce
+    hName: ग्रीन चिली सॉस
+    brand: Navkar
+    options:
+      - option: Bottle
+        qtyOptionsRef: navkarBottlePack
+      - option: Can
+        qtyOptionsRef: navkarCanPack
+  - name : Venigar
+    hName: विनेगर
+    brand: Navkar
+    options:
+      - option: Bottle
+        qtyOptionsRef: navkarBottlePack
+      - option: Can
+        qtyOptionsRef: navkarCanPack
+  - name : Schezwan Chutney
+    hName: शेज़वान चटनी
+    brand: Chings
+    options:
+      - option: 10 ₹
+        qtyOptionsRef: chingsMasala10Pack
+      - option: 250g
+        qtyOptionsRef: chingsMasala250gPack
+  - name : Noodles Masala
+    hName: नूडल्स मसाला
+    brand: Chings
+    options:
+      - option: 10 ₹
+        qtyOptionsRef: chingsMasala10Pack
+  - name : Fried Rice Masala
+    hName: फ्राइड राइस मसाला
+    brand: Chings
+    options:
+      - option: 10 ₹
+        qtyOptionsRef: chingsMasala10Pack
+  - name : Manchurian Masala
+    hName: मंचूरियन मसाला
+    brand: Chings
+    options:
+      - option: 10 ₹
+        qtyOptionsRef: chingsMasala10Pack
+  - name : Manchao Soup
+    hName: मंचाओ सूप
+    brand: Chings
+    options:
+      - option: 10 ₹
+        qtyOptionsRef: chingsMasala10Pack
+  - name : Soya Sauce
+    hName: सोया सॉस
+    brand: Chings
+    options:
+      - option: Bottle
+        qtyOptionsRef: navkarBottlePack
+  - name : Chilly Sauce
+    hName: चिली सॉस
+    brand: Chings
+    options:
+      - option: Bottle
+        qtyOptionsRef: navkarBottlePack
+  - name : Green Chilly Sauce
+    hName: ग्रीन चिली सॉस
+    brand: Chings
+    options:
+      - option: Bottle
+        qtyOptionsRef: navkarBottlePack
+  - name : White Pepper Powder
+    hName: सफेद मिर्च पाउडर
+    brand: Star Zing
+    options:
+      - option: 500g
+        qtyOptionsRef: starZing500gPack
+  - name : Black Pepper Powder
+    hName: काली मिर्च पाउडर
+    brand: Star Zing
+    options:
+      - option: 500g
+        qtyOptionsRef: starZing500gPack
+  - name : Chat Masala
+    hName: चाट मसाला
+    brand: Star Zing
+    options:
+      - option: 500g
+        qtyOptionsRef: starZing500gPack
+  - name : Amchur Powder
+    hName: अमचूर पाउडर
+    brand: Star Zing
+    options:
+      - option: 1 Kg
+        qtyOptionsRef: starZing500gPack
+  - name : Jeera Powder
+    hName: जीरा पाउडर
+    brand: Star Zing
+    options:
+      - option: 500g
+        qtyOptionsRef: starZing500gPack
+  - name : Jaljeera Powder
+    hName: जलजीरा पाउडर
+    brand: Star Zing
+    options:
+      - option: 500g
+        qtyOptionsRef: starZing500gPack
+  - name : Ginger Garlic Paste
+    hName: अदरक लहसुन पेस्ट
+    brand: Smith & Jones
+    options:
+      - option: 5 ₹
+        qtyOptionsRef: chingsMasala10Pack
+      - option: 200g
+        qtyOptionsRef: sj250gPack
+  - name : Pasta Masala
+    hName: पास्ता मसाला
+    brand: Smith & Jones
+    options:
+      - option: 5 ₹
+        qtyOptionsRef: chingsMasala10Pack
+  - name : PlusFood Jeera
+    hName: प्लसफूड जीरा
+    brand: DA Patel
+    options:
+      - option: 50g
+        qtyOptionsRef: genericKgPack
+      - option: 100g
+        qtyOptionsRef: genericKgPack
+      - option: 250g
+        qtyOptionsRef: genericKgPack
+      - option: 1 Kg
+        qtyOptionsRef: genericKgPack
+  - name : Select Jeera
+    hName: सेलेक्ट जीरा
+    brand: DA Patel
+    options:
+      - option: 50g
+        qtyOptionsRef: genericKgPack
+      - option: 100g
+        qtyOptionsRef: genericKgPack
+      - option: 250g
+        qtyOptionsRef: genericKgPack
+      - option: 1 Kg
+        qtyOptionsRef: genericKgPack
+  - name : PlusFood Rai ( Small )
+    hName: प्लसफूड राई
+    brand: DA Patel
+    options:
+      - option: 50g
+        qtyOptionsRef: genericKgPack
+      - option: 100g
+        qtyOptionsRef: genericKgPack
+      - option: 250g
+        qtyOptionsRef: genericKgPack
+  - name : PlusFood Rai ( Jad )
+    hName: प्लसफूड राई
+    brand: DA Patel
+    options:
+      - option: 50g
+        qtyOptionsRef: genericKgPack
+      - option: 100g
+        qtyOptionsRef: genericKgPack
+      - option: 250g
+        qtyOptionsRef: genericKgPack
+  - name : PlusFood Ajwain
+    hName: प्लसफूड अजवाइन
+    brand: DA Patel
+    options:
+      - option: 50g
+        qtyOptionsRef: genericKgPack
+      - option: 100g
+        qtyOptionsRef: genericKgPack
+      - option: 250g
+        qtyOptionsRef: genericKgPack
+  - name : Select Till
+    hName: सेलेक्ट तिल
+    brand: DA Patel
+    options:
+      - option: Loose
+        qtyOptionsRef: genericKgPack
+      - option: 1 Kg
+        qtyOptionsRef: genericKgPack\
+  - name : PlusFood Haldi Powder
+    hName: प्लसफूड हल्दी पाउडर
+    brand: DA Patel
+    options:
+      - option: 50g
+        qtyOptionsRef: genericKgPack
+      - option: 100g
+        qtyOptionsRef: genericKgPack
+      - option: 200g
+        qtyOptionsRef: genericKgPack
+  - name : PlusFood Dhana Powder
+    hName: प्लसफूड धनिया पाउडर
+    brand: DA Patel
+    options:
+      - option: 50g
+        qtyOptionsRef: genericKgPack
+      - option: 100g
+        qtyOptionsRef: genericKgPack
+      - option: 200g
+        qtyOptionsRef: genericKgPack
