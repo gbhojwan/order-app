@@ -97,6 +97,14 @@ qtyOptionsSets:
       qtyValues: [1, 2, 3, 4, 5, 6, 10]
     - qtyType: Bag
       qtyValues: [1, 2, 3, 4, 5]
+  - name : costlyMasaleKgPack
+    qtyTypeOptions:
+    - qtyType: gms
+      qtyValues: [250, 500]
+    - qtyType: Kg
+      qtyValues: [1, 2, 3, 4, 5, 6, 10]
+    - qtyType: Box
+      qtyValues: [1, 2, 3, 4, 5]
   - name : tinKgPack
     qtyTypeOptions:
     - qtyType: Kg
@@ -374,6 +382,32 @@ products:
     options:
       - option: 50g
         qtyOptionsRef: everest50gPack
+  - name : Badam
+    hName: बादाम
+    brand: Dry Fruits
+    options:
+      - option: Regular
+        qtyOptionsRef: genericKgPack
+      - option: Bold
+        qtyOptionsRef: genericKgPack
+      - option: 250g
+        qtyOptionsRef: genericKgPack
+      - option: Salted
+        qtyOptionsRef: genericKgPack
+      - option: Badam Katri
+        qtyOptionsRef: genericKgPack
+  - name : Ajwain
+    hName: अजवाइन
+    brand: खड़े मसाले
+    options:
+      - option: 50g
+        qtyOptionsRef: genericKgPack
+      - option: 100g
+        qtyOptionsRef: genericKgPack
+      - option: 250g
+        qtyOptionsRef: genericKgPack
+      - option: 1 Kg
+        qtyOptionsRef: genericKgPack
   - name : Mirchi Powder
     hName: मिर्च पाउडर
     brand: Ambari
@@ -407,8 +441,6 @@ products:
     brand: Ambari
     options:
       - option: 200g
-        qtyOptionsRef: ambari100gPack
-      - option: 500g
         qtyOptionsRef: ambari100gPack
   - name : Mirchi Powder
     hName: मिर्च पाउडर
@@ -558,7 +590,7 @@ products:
         qtyOptionsRef: starZing500gPack
   - name : Ginger Garlic Paste
     hName: अदरक लहसुन पेस्ट
-    brand: Smith & Jones
+    brand: Other Masale
     options:
       - option: 5 ₹
         qtyOptionsRef: chingsMasala10Pack
@@ -566,7 +598,7 @@ products:
         qtyOptionsRef: sj250gPack
   - name : Pasta Masala
     hName: पास्ता मसाला
-    brand: Smith & Jones
+    brand: Other Masale
     options:
       - option: 5 ₹
         qtyOptionsRef: chingsMasala10Pack
@@ -652,19 +684,15 @@ products:
         qtyOptionsRef: genericKgPack
       - option: 200g
         qtyOptionsRef: genericKgPack
-  - name : Badam
-    hName: बादाम
-    brand: Dry Fruits
+  - name : PlusFood Khuskhus
+    hName: प्लसफूड खसखस
+    brand: DA Patel
     options:
-      - option: Regular
+      - option: 20g
         qtyOptionsRef: genericKgPack
-      - option: Bold
+      - option: 50g
         qtyOptionsRef: genericKgPack
-      - option: 250g
-        qtyOptionsRef: genericKgPack
-      - option: Salted
-        qtyOptionsRef: genericKgPack
-      - option: Badam Katri
+      - option: 500g
         qtyOptionsRef: genericKgPack
   - name : Kaju
     hName: काजू
@@ -684,6 +712,16 @@ products:
         qtyOptionsRef: tinKgPack
       - option: Pakhli
         qtyOptionsRef: tinKgPack
+  - name : Kaju Kani
+    hName: काजू
+    brand: Dry Fruits
+    options:
+      - option: Regular
+        qtyOptionsRef: boxKgPack
+      - option: Extra
+        qtyOptionsRef: boxKgPack
+      - option: Shendana
+        qtyOptionsRef: boxKgPack
   - name : Khopra
     hName: खोपरा
     brand: खड़े मसाले
@@ -822,18 +860,6 @@ products:
         qtyOptionsRef: genericKgPack
       - option: 1 Kg
         qtyOptionsRef: genericKgPack
-  - name : Ajwain
-    hName: अजवाइन
-    brand: खड़े मसाले
-    options:
-      - option: 50g
-        qtyOptionsRef: genericKgPack
-      - option: 100g
-        qtyOptionsRef: genericKgPack
-      - option: 250g
-        qtyOptionsRef: genericKgPack
-      - option: 1 Kg
-        qtyOptionsRef: genericKgPack
   - name : Rai
     hName: राई
     brand: खड़े मसाले
@@ -871,21 +897,21 @@ products:
     brand: खड़े मसाले
     options:
       - option: Regular
-        qtyOptionsRef: boxKgPack
+        qtyOptionsRef: costlyMasaleKgPack
       - option: Extra
-        qtyOptionsRef: boxKgPack
+        qtyOptionsRef: costlyMasaleKgPack
   - name : Lavang
     hName: लवंग
     brand: खड़े मसाले
     options:
       - option: Loose
-        qtyOptionsRef: boxKgPack
+        qtyOptionsRef: costlyMasaleKgPack
   - name : Kalimiri
     hName: कालीमिरी
     brand: खड़े मसाले
     options:
       - option: Loose
-        qtyOptionsRef: genericKgPack
+        qtyOptionsRef: costlyMasaleKgPack
   - name : Methi
     hName: मेथी
     brand: खड़े मसाले
@@ -919,7 +945,7 @@ products:
     brand: खड़े मसाले
     options:
       - option: Loose 
-        qtyOptionsRef: genericKgPack
+        qtyOptionsRef: costlyMasaleKgPack
   - name : Sunth
     hName: सोंठ
     brand: खड़े मसाले
@@ -986,12 +1012,56 @@ products:
         qtyOptionsRef: genericKgPack
       - option: Penne
         qtyOptionsRef: genericKgPack
+  - name : Phutane
+    hName: फूटाने
+    brand: Others
+    options:
+      - option: Salted / Black
+        qtyOptionsRef: genericKgPack
+      - option: Plain / Yellow
+        qtyOptionsRef: genericKgPack
+  - name : Peanut / Shendana
+    hName: शेंगदाना
+    brand: Others
+    options:
+      - option: Salted
+        qtyOptionsRef: boxKgPack
   - name : Maggie Masala
     hName: मैगी मसाला
-    brand: Others
+    brand: Other Masale
     options:
       - option: 5 ₹
         qtyOptionsRef: chingsMasala10Pack
+  - name : Navjeevan Hing Powder
+    hName: नवजीवन हींग
+    brand: Other Masale
+    options:
+      - option: 15 ₹
+        qtyOptionsRef: chingsMasala10Pack
+      - option: 50g
+        qtyOptionsRef: boxKgPack
+      - option: 100g
+        qtyOptionsRef: boxKgPack
+      - option: 1 Kg
+        qtyOptionsRef: boxKgPack
+  - name : LG Hing Powder
+    hName: एलजी हींग
+    brand: Other Masale
+    options:
+      - option: 50g
+        qtyOptionsRef: boxKgPack
+      - option: 100g
+        qtyOptionsRef: boxKgPack
+  - name : Khada Hing
+    hName: नवजीवन हींग
+    brand: Other Masale
+    options:
+      - option: Black
+        qtyOptionsRef: genericKgPack
+      - option: Brown
+        qtyOptionsRef: genericKgPack
+      - option: Navjeevan Kabuli
+        qtyOptionsRef: boxKgPack
   - name : Govardhan Ghee
     hName: गोवर्धन घी
     brand: Others
@@ -1032,7 +1102,7 @@ products:
         qtyOptionsRef: genericKgPack
   - name : Kheer Masala
     hName: खीर मसाला
-    brand: Others
+    brand: Other Masale
     options:
       - option: Aachi
         qtyOptionsRef: chingsMasala10Pack
@@ -1040,12 +1110,48 @@ products:
         qtyOptionsRef: chingsMasala10Pack
   - name : Rajkamal Mirchi Powder
     hName: राजकमल मिर्च पाउडर
-    brand: Others
+    brand: Other Masale
     options:
       - option: 500g
         qtyOptionsRef: ambari100gPack
       - option: 1 Kg
         qtyOptionsRef: ambari100gPack
+  - name : Kashmiri Mirchi Powder
+    hName: कश्मीरी मिर्च पाउडर
+    brand: Other Masale
+    options:
+      - option: Appu 500g
+        qtyOptionsRef: genericKgPack
+  - name : Haldi Powder
+    hName: हल्दी पाउडर
+    brand: Other Masale
+    options:
+      - option: 500g
+        qtyOptionsRef: genericKgPack
+  - name : Dhana Powder RajaRani
+    hName: धनिया पाउडर राजारानी
+    brand: Other Masale
+    options:
+      - option: 500g
+        qtyOptionsRef: genericKgPack
+  - name : Kothmire Sunday Special
+    hName: कोथमीर संडे स्पेशल
+    brand: Other Masale
+    options:
+      - option: 10 ₹
+        qtyOptionsRef: chingsMasala10Pack
+      - option: 100g
+        qtyOptionsRef: genericKgPack
+      - option: 200g
+        qtyOptionsRef: genericKgPack
+      - option: 500g
+        qtyOptionsRef: genericKgPack
+  - name : Dhana Dal
+    hName: धना दाल
+    brand: Others
+    options:
+      - option: 200g
+        qtyOptionsRef: genericKgPack
   - name : Salt
     hName: नमक
     brand: Others
@@ -1072,6 +1178,18 @@ products:
         qtyOptionsRef: genericKgPack
       - option: Adiv / Aliv
         qtyOptionsRef: genericKgPack
+      - option: Bal Sepa
+        qtyOptionsRef: genericKgPack
+  - name : Magaj
+    hName: मगज
+    brand: Others
+    options:
+      - option: Tumba / Small
+        qtyOptionsRef: genericKgPack
+      - option: Regular
+        qtyOptionsRef: genericKgPack
+      - option: Premium
+        qtyOptionsRef: genericKgPack
   - name : Sevai
     hName: बीज
     brand: Others
@@ -1080,3 +1198,67 @@ products:
         qtyOptionsRef: genericDzPack
       - option: A1
         qtyOptionsRef: chingsMasala10Pack
+  - name : Sevai
+    hName: सेवई
+    brand: Others
+    options:
+      - option: Rosted - Genda
+        qtyOptionsRef: genericDzPack
+      - option: A1
+        qtyOptionsRef: chingsMasala10Pack
+  - name : Ajino Moto
+    hName: अजिनो मोटो
+    brand: Others
+    options:
+      - option: Loose
+        qtyOptionsRef: genericKgPack
+  - name : Cornflour
+    hName: कॉर्नफ्लोर
+    brand: Others
+    options:
+      - option: 1 Kg
+        qtyOptionsRef: genericKgPack
+  - name : Citric
+    hName: नींबू सत
+    brand: Others
+    options:
+      - option: 1 Kg
+        qtyOptionsRef: genericKgPack
+  - name : 3 Parrot Colour 11 ₹
+    hName: 3 पर्रोट कलर 11 ₹
+    brand: Others
+    options:
+      - option: Orange Red
+        qtyOptionsRef: chingsMasala10Pack
+      - option: Tomato Red
+        qtyOptionsRef: chingsMasala10Pack
+      - option: Lemon Yellow
+        qtyOptionsRef: chingsMasala10Pack
+      - option: Apple Green
+        qtyOptionsRef: chingsMasala10Pack
+      - option: Kesri
+        qtyOptionsRef: chingsMasala10Pack
+  - name : 3 Parrot Colour 100g
+    hName: 3 पर्रोट कलर 100g
+    brand: Others
+    options:
+      - option: Orange Red
+        qtyOptionsRef: boxKgPack
+      - option: Tomato Red
+        qtyOptionsRef: boxKgPack
+      - option: Lemon Yellow
+        qtyOptionsRef: boxKgPack
+      - option: Apple Green
+        qtyOptionsRef: boxKgPack
+      - option: Kesri
+        qtyOptionsRef: boxKgPack
+      - option: Chocolate Brown
+        qtyOptionsRef: boxKgPack
+  - name : Noodles
+    hName: नूडल्स
+    brand: Others
+    options:
+      - option: Yellow
+        qtyOptionsRef: boxOnlyPack
+      - option: White
+        qtyOptionsRef: boxOnlyPack

@@ -1,6 +1,0 @@
-qtyOptionsSets:
-  everest50gPack:
-    - qtyType: pcs
-      qtyValues: [5, 10, 20, 30, 40, 50, 60]
-    - qtyType: Box
-      qtyValues: [1, 2, 3, 4, 5]
