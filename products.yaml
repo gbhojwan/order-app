@@ -870,6 +870,16 @@ products:
         qtyOptionsRef: genericKgPack
       - option: Yellow
         qtyOptionsRef: genericKgPack
+  - name : Sabut Haldi
+    hName: हळकुंड
+    brand: खड़े मसाले
+    options:
+      - option: Regular
+        qtyOptionsRef: genericKgPack
+      - option: Selam
+        qtyOptionsRef: genericKgPack
+      - option: Selam Bold
+        qtyOptionsRef: genericKgPack
   - name : Souff
     hName: सौंफ
     brand: खड़े मसाले
