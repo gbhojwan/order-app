@@ -132,6 +132,12 @@ qtyOptionsSets:
     - qtyType: Dozen
       qtyValues: [1, 2, 3, 4, 5, 6]
     - qtyType: Box
+      qtyValues: [1, 2, 3, 4, 5, 10]
+  - name : bushColourPack
+    qtyTypeOptions:
+    - qtyType: pcs
+      qtyValues: [1, 2, 3, 4, 5, 6, 7, 8 , 9, 10, 12, 15, 30, 50, 60]
+    - qtyType: Box
       qtyValues: [1, 2, 3, 4, 5]
 products:
   - name : Meat Masala
@@ -838,6 +844,18 @@ products:
         qtyOptionsRef: boxKgPack
       - option: Seedless - Bhakti
         qtyOptionsRef: boxKgPack
+  - name : Makhana
+    hName: मखाना
+    brand: Dry Fruits
+    options:
+      - option: Shrishti
+        qtyOptionsRef: genericKgPack
+      - option: Jai Ho
+        qtyOptionsRef: genericKgPack
+      - option: Amrit Bhog
+        qtyOptionsRef: genericKgPack
+      - option: 100g
+        qtyOptionsRef: genericKgPack
   - name : Jardalu
     hName: जर्दालू
     brand: Dry Fruits
@@ -939,11 +957,11 @@ products:
     brand: खड़े मसाले
     options:
       - option: Loose 
-        qtyOptionsRef: genericKgPack
+        qtyOptionsRef: costlyMasaleKgPack
       - option: 5g
-        qtyOptionsRef: genericKgPack
+        qtyOptionsRef: costlyMasaleKgPack
       - option: 10g
-        qtyOptionsRef: genericKgPack
+        qtyOptionsRef: costlyMasaleKgPack
   - name : Tejpan
     hName: तेजपान
     brand: खड़े मसाले
@@ -962,6 +980,12 @@ products:
     options:
       - option: Loose
         qtyOptionsRef: boxKgPack
+  - name : Dagadphool
+    hName: रामपात्रि
+    brand: खड़े मसाले
+    options:
+      - option: Loose
+        qtyOptionsRef: costlyMasaleKgPack
   - name : Rampatri
     hName: रामपात्रि
     brand: खड़े मसाले
@@ -1029,6 +1053,22 @@ products:
       - option: Salted / Black
         qtyOptionsRef: genericKgPack
       - option: Plain / Yellow
+        qtyOptionsRef: genericKgPack
+  - name : Mukhwas
+    hName: मुखवास
+    brand: Others
+    options:
+      - option: India
+        qtyOptionsRef: genericKgPack
+      - option: Sugam 20 ₹
+        qtyOptionsRef: chingsMasala10Pack
+      - option: Sugam 40 ₹
+        qtyOptionsRef: chingsMasala10Pack
+  - name : Popcorn
+    hName: फूटाने
+    brand: Others
+    options:
+      - option: Loose
         qtyOptionsRef: genericKgPack
   - name : Peanut / Shendana
     hName: शेंगदाना
@@ -1104,6 +1144,12 @@ products:
         qtyOptionsRef: genericKgPack
       - option: Red
         qtyOptionsRef: genericKgPack
+  - name : Amsool
+    hName: आमसूल
+    brand: Others
+    options:
+      - option: 1 Kg
+        qtyOptionsRef: boxKgPack
   - name : Sagar Milk Powder
     hName: सागर दूध पाउडर
     brand: Others
@@ -1234,6 +1280,22 @@ products:
     options:
       - option: 1 Kg
         qtyOptionsRef: genericKgPack
+  - name : Bush Colour
+    hName: बुश रंग
+    brand: Others
+    options:
+      - option: Orange Red
+        qtyOptionsRef: bushColourPack
+      - option: Tomato Red
+        qtyOptionsRef: bushColourPack
+      - option: Lemon Yellow
+        qtyOptionsRef: bushColourPack
+      - option: Apple Green
+        qtyOptionsRef: bushColourPack
+      - option: Kesri
+        qtyOptionsRef: bushColourPack
+      - option: Chocolate Brown
+        qtyOptionsRef: bushColourPack
   - name : 3 Parrot Colour 11 ₹
     hName: 3 पर्रोट कलर 11 ₹
     brand: Others
@@ -1272,3 +1334,7 @@ products:
         qtyOptionsRef: boxOnlyPack
       - option: White
         qtyOptionsRef: boxOnlyPack
+      - option: Chintoo
+        qtyOptionsRef: genericDzPack
+      - option: Chintoo Masala
+        qtyOptionsRef: genericDzPack
