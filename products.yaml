@@ -3,6 +3,9 @@ qtyOptionsSets:
     qtyTypeOptions:
     - qtyType: Box
       qtyValues: [1, 2, 3, 4, 5]
+      targetUnit:
+        name: pkt
+        mul: 1
   - name : everest50gPack
     qtyTypeOptions:
     - qtyType: pcs
@@ -13,6 +16,9 @@ qtyOptionsSets:
     qtyTypeOptions:
     - qtyType: gms
       qtyValues: [200, 400, 600, 800]
+      targetUnit:
+        name: Kg
+        mul: 0.001
     - qtyType: Kg
       qtyValues: [1, 2, 3, 4, 5, 6, 10]
     - qtyType: Box
@@ -27,6 +33,9 @@ qtyOptionsSets:
     qtyTypeOptions:
     - qtyType: gms
       qtyValues: [500]
+      targetUnit:
+        name: Kg
+        mul: 0.001
     - qtyType: Kg
       qtyValues: [1, 2, 2.5, 3, 4, 5, 6, 10]
     - qtyType: Box
@@ -47,7 +56,10 @@ qtyOptionsSets:
     qtyTypeOptions:
     - qtyType: packet
       qtyValues: [1, 2, 3, 4, 5]
-    - qtyType: Box
+      targetUnit:
+        name: Hanger
+        mul: 1
+    - qtyType: Bag
       qtyValues: [1, 2, 3, 4, 5]
   - name : gajgouri1KgPack
     qtyTypeOptions:
@@ -71,6 +83,9 @@ qtyOptionsSets:
     qtyTypeOptions:
     - qtyType: packet
       qtyValues: [1, 2, 3, 4, 5]
+      targetUnit:
+        name: pkt
+        mul: 1
     - qtyType: Box
       qtyValues: [1, 2, 3, 4, 5]
   - name : chingsMasala250gPack
@@ -101,6 +116,9 @@ qtyOptionsSets:
     qtyTypeOptions:
     - qtyType: gms
       qtyValues: [250, 500]
+      targetUnit:
+        name: Kg
+        mul: 0.001
     - qtyType: Kg
       qtyValues: [1, 2, 3, 4, 5, 6, 10]
     - qtyType: Box
@@ -114,7 +132,7 @@ qtyOptionsSets:
   - name : boxKgPack
     qtyTypeOptions:
     - qtyType: Kg
-      qtyValues: [1, 2, 3, 4, 5]
+      qtyValues: [1, 2, 3, 4, 5, 10]
     - qtyType: Box
       qtyValues: [1, 2, 3, 4, 5, 10]
   - name : papadKgPack
@@ -126,17 +144,48 @@ qtyOptionsSets:
   - name : boxOnlyPack
     qtyTypeOptions:
     - qtyType: Box
-      qtyValues: [1, 2, 3, 4, 5, 10, 12, 15, 20]
+      qtyValues: [1, 2, 3, 4, 5, 10, 12, 15, 20, 30]
+  - name : bagOnlyPack
+    qtyTypeOptions:
+    - qtyType: Box
+      qtyValues: [1, 2, 3, 4, 5, 10, 12, 15, 20, 30]
   - name : genericDzPack
     qtyTypeOptions:
     - qtyType: Dozen
       qtyValues: [1, 2, 3, 4, 5, 6]
+      targetUnit:
+        name: pcs
+        mul: 12
     - qtyType: Box
       qtyValues: [1, 2, 3, 4, 5, 10]
   - name : bushColourPack
     qtyTypeOptions:
     - qtyType: pcs
       qtyValues: [1, 2, 3, 4, 5, 6, 7, 8 , 9, 10, 12, 15, 30, 50, 60]
+    - qtyType: Box
+      qtyValues: [1, 2, 3, 4, 5]
+  - name : mrp11Color
+    qtyTypeOptions:
+    - qtyType: pkt
+      qtyValues: [1, 2, 3, 4, 5]
+      targetUnit:
+        name: Box
+        mul: 1
+    - qtyType: Box
+      qtyValues: [1, 2, 3, 4, 5]
+      targetUnit:
+        name: Wholesale Packet
+        mul: 1
+  - name : babyKesarPack
+    qtyTypeOptions:
+    - qtyType: pcs
+      qtyValues: [1, 2, 3, 4, 5, 6, 7, 8 , 9, 10, 12, 15]
+    - qtyType: Box
+      qtyValues: [1, 2, 3, 4, 5]
+  - name : babyKesar250mgPack
+    qtyTypeOptions:
+    - qtyType: pcs
+      qtyValues: [ 4, 8 , 12, 16, 20]
     - qtyType: Box
       qtyValues: [1, 2, 3, 4, 5]
 products:
@@ -146,182 +195,239 @@ products:
     options:
       - option: 5 ₹
         qtyOptionsRef: everestMrp10Pack
+        appName: Meat 5
       - option: 10 ₹
         qtyOptionsRef: everestMrp10Pack
+        appName: Meat 10
       - option: 50g
         qtyOptionsRef: everest50gPack
+        appName: Meat 50
       - option: 200g
         qtyOptionsRef: everest200gPack
+        appName: Meat 200
       - option: 500g
         qtyOptionsRef: everest500gPack      
+        appName: Meat 500
   - name: Shahi Biryani Masala
     hName: शाही बिरयानी मसाला
     brand: Everest Masale
     options:
       - option: 10 ₹
         qtyOptionsRef: everestMrp10Pack
+        appName: Biryani 10
       - option: 25g
         qtyOptionsRef: everest50gPack
+        appName: Biryani 25
       - option: 50g
         qtyOptionsRef: everest50gPack
+        appName: Biryani 50
       - option: 200g
         qtyOptionsRef: everest200gPack
+        appName: Biryani 200
   - name: Kitchen King Masala
     hName: किचन किंग मसाला
     brand: Everest Masale
     options:
       - option: 10 ₹
         qtyOptionsRef: everestMrp10Pack
+        appName: K King 10
       - option: 50g
         qtyOptionsRef: everest50gPack
+        appName: K King 50
       - option: 200g
         qtyOptionsRef: everest200gPack
+        appName: K King 200
+      - option: 500g
+        qtyOptionsRef: everest500gPack
+        appName: K King 500
   - name: Super Garam Masala
     hName: सुपर गरम मसाला
     brand: Everest Masale
     options:
       - option: 200g
         qtyOptionsRef: everest200gPack
+        appName: Super Garam 200
   - name: Garam Masala
     hName: गरम मसाला
     brand: Everest Masale
     options:
       - option: 10 ₹
         qtyOptionsRef: everestMrp10Pack
+        appName: Garam 10
       - option: 50g
         qtyOptionsRef: everest50gPack
+        appName: Garam 50
       - option: 200g
         qtyOptionsRef: everest200gPack
+        appName: Special Garama 200
   - name: Chicken Masala
     hName: चिकन मसाला
     brand: Everest Masale
     options:
       - option: 5 ₹
         qtyOptionsRef: everestMrp10Pack
+        appName: Chicken 5
       - option: 10 ₹
         qtyOptionsRef: everestMrp10Pack
+        appName: Chicken 10
       - option: 50g
         qtyOptionsRef: everest50gPack
+        appName: Chicken 50
       - option: 200g
         qtyOptionsRef: everest200gPack
+        appName: Chicken 200
   - name: Tandoori Chicken Masala
     hName: तंदूरी चिकन मसाला
     brand: Everest Masale
     options:
       - option: 50g
         qtyOptionsRef: everest50gPack
-      - option: 200g
-        qtyOptionsRef: everest200gPack
+      - option: 500g
+        qtyOptionsRef: everest500gPack
+        appName: Tandoori Chicken 500
   - name: Chicken Biryani Masala
     hName: चिकन बिरयानी मसाला
     brand: Everest Masale
     options:
       - option: 10 ₹
         qtyOptionsRef: everestMrp10Pack
+        appName: Chicken Biryani 10
       - option: 50g
         qtyOptionsRef: everest50gPack
+        appName: Chicken 50
   - name: Chat Masala
     hName: चाट मसाला
     brand: Everest Masale
     options:
       - option: 10 ₹
         qtyOptionsRef: everestMrp10Pack
+        appName: Chat 10
       - option: 50g
         qtyOptionsRef: everest50gPack
+        appName: Chat 50
       - option: 200g
         qtyOptionsRef: everest200gPack
+        appName: Chat 200
   - name: Pav Bhaji Masala
     hName: पाव भाजी मसाला
     brand: Everest Masale
     options:
       - option: 10 ₹
         qtyOptionsRef: everestMrp10Pack
+        appName: Pav Bhaji 10
       - option: 50g
         qtyOptionsRef: everest50gPack
+        appName: Pav Bhaji 50
       - option: 200g
         qtyOptionsRef: everest200gPack
+        appName: Pav Bhaji 200
   - name: Sambar Masala
     hName: सांबर मसाला
     brand: Everest Masale
     options:
       - option: 10 ₹
         qtyOptionsRef: everestMrp10Pack
+        appName: Sambhar 10
       - option: 50g
         qtyOptionsRef: everest50gPack
+        appName: Sambhar 50
       - option: 200g
         qtyOptionsRef: everest200gPack
+        appName: Sambhar 200
   - name: Chhole Masala
     hName: छोले मसाला
     brand: Everest Masale
     options:
       - option: 10 ₹
         qtyOptionsRef: everestMrp10Pack
+        appName: Chole 10
       - option: 50g
         qtyOptionsRef: everest50gPack
+        appName: Chole 50
       - option: 200g
         qtyOptionsRef: everest200gPack
+        appName: Chole 200
   - name: Sabji Masala
     hName: सब्जी मसाला
     brand: Everest Masale
     options:
       - option: 10 ₹
         qtyOptionsRef: everestMrp10Pack
+        appName: Sabji 10
       - option: 50g
         qtyOptionsRef: everest50gPack
+        appName: Sabji 50
       - option: 200g
         qtyOptionsRef: everest200gPack
+        appName: Sabji 200
   - name: Shahi Paneer Masala
     hName: शाही पनीर मसाला
     brand: Everest Masale
     options:
       - option: 10 ₹
         qtyOptionsRef: everestMrp10Pack
+        appName: Paneer 10
       - option: 50g
         qtyOptionsRef: everest50gPack
+        appName: Paneer 50
   - name: Pani Puri Masala
     hName: पानी पुरी मसाला
     brand: Everest Masale
     options:
       - option: 10 ₹
         qtyOptionsRef: everestMrp10Pack
+        appName: Pani Puri 10
       - option: 50g
         qtyOptionsRef: everest50gPack
+        appName: Pani Puri 50
   - name : Haldi Powder
     hName: हल्दी पाउडर
     brand: Everest Powder
     options:
       - option: 10 ₹
         qtyOptionsRef: everestMrp10Pack
+        appName: Haldi 10
       - option: 100g
         qtyOptionsRef: everest200gPackMinKg
+        appName: Haldi 100 @ Everest
       - option: 200g
         qtyOptionsRef: everest200gPackMinKg
+        appName: Haldi 200 @ Everest
       - option: 500g
         qtyOptionsRef: everest500gPack
+        appName: Haldi 200 @ Everest
   - name : Tikhalal Mirchi Powder
     hName: तिखालाल मिर्च पाउडर
     brand: Everest Powder
     options:
       - option: 10 ₹
         qtyOptionsRef: everestMrp10Pack
+        appName: Mirchi 10 @ Everest
       - option: 100g
         qtyOptionsRef: everest200gPackMinKg
+        appName: Mirchi 100 @ Everest
       - option: 200g
         qtyOptionsRef: everest200gPackMinKg
+        appName: Mirchi 200 @ Everest
       - option: 500g
         qtyOptionsRef: everest500gPack
+        appName: Mirchi 500 @ Everest
   - name : Coriander Powder
     hName: धनिया पाउडर
     brand: Everest Powder
     options:
       - option: 10 ₹
         qtyOptionsRef: everestMrp10Pack
+        appName: Dhana 10
       - option: 100g
         qtyOptionsRef: everest200gPackMinKg
+        appName: Dhana 100 @ Everest
       - option: 200g
         qtyOptionsRef: everest200gPackMinKg
+        appName: Dhana 200 @ Everest
       - option: 500g
         qtyOptionsRef: everest500gPack
+        appName: Dhana 500 @ Everest
   - name : Kashmiri Mirchi Powder
     hName: कश्मीरी मिर्च पाउडर
     brand: Everest Powder
@@ -338,384 +444,477 @@ products:
     options:
       - option: 25g
         qtyOptionsRef: everest50gPack
+        appName: K Methi 25
       - option: 500g
         qtyOptionsRef: everest500gPack
+        appName: K Methi 500
   - name: Jaljeera Powder
     hName: जलजीरा पाउडर
     brand: Everest Powder
     options:
       - option: 50g
         qtyOptionsRef: everest50gPack
+        appName: Jaljeera 50
       - option: 100g
         qtyOptionsRef: everest50gPack
+        appName: Jaljeera 100
   - name: Jeera Powder
     hName: जीरा पाउडर
     brand: Everest Powder
     options:
       - option: 10 ₹
         qtyOptionsRef: everestMrp10Pack
+        appName: Cumin 10
       - option: 50g
         qtyOptionsRef: everest50gPack
+        appName: Cumin 50
   - name: Tea Masala
     hName: चाय मसाला
     brand: Everest Masale
     options:
       - option: 25g
         qtyOptionsRef: everest50gPack
+        appName: Tea 25
       - option: 50g
         qtyOptionsRef: everest50gPack
+        appName: Tea 50
   - name: Milk Masala
     hName: दूध मसाला
     brand: Everest Masale
     options:
       - option: 10g
         qtyOptionsRef: everestMilkMasalaPack
+        appName: Milk Masala @ Everest 10g
   - name: Dry Mango Powder
     hName: अमचूर पाउडर
     brand: Everest Powder
     options:
       - option: 50g
         qtyOptionsRef: everest50gPack
+        appName: Amchur 50 Everest
   - name: Black Pepper Powder
     hName: काली मिर्च पाउडर
     brand: Everest Powder
     options:
       - option: 50g
         qtyOptionsRef: everest50gPack
+        appName: Black Pepper 50
   - name: Dry Ginger Powder
     hName: सोंठ पाउडर
     brand: Everest Powder
     options:
       - option: 50g
         qtyOptionsRef: everest50gPack
+        appName: Sunth 50
   - name : Badam
     hName: बादाम
     brand: Dry Fruits
     options:
       - option: Regular
         qtyOptionsRef: genericKgPack
+        appName: Badam @ Regular
       - option: Bold
         qtyOptionsRef: genericKgPack
+        appName: Badam @ Bold
       - option: 250g
         qtyOptionsRef: genericKgPack
+        appName: Badam 250
       - option: Salted
         qtyOptionsRef: genericKgPack
       - option: Badam Katri
         qtyOptionsRef: genericKgPack
+        appName: Badam Katri BK
   - name : Ajwain
     hName: अजवाइन
     brand: खड़े मसाले
     options:
       - option: 50g
         qtyOptionsRef: genericKgPack
+        appName: Ajwain 50 
       - option: 100g
         qtyOptionsRef: genericKgPack
+        appName: Ajwain 100
       - option: 250g
         qtyOptionsRef: genericKgPack
+        appName: Ajwain 250
       - option: 1 Kg
         qtyOptionsRef: genericKgPack
+        appName: Ajwain
   - name : Mirchi Powder
     hName: मिर्च पाउडर
     brand: Ambari
     options:
       - option: 5 ₹
         qtyOptionsRef: ambariMrp10Pack
+        appName: Mirchi 5 Ambari
       - option: 10 ₹
         qtyOptionsRef: ambariMrp10Pack
+        appName: Mirchi 10 @ Ambari
       - option: 100g
         qtyOptionsRef: ambari100gPack
+        appName: Mirchi 100 @ Ambari
       - option: 200g
         qtyOptionsRef: ambari100gPack
+        appName: Mirchi 200 @ Ambari
       - option: 500g
         qtyOptionsRef: ambari100gPack
+        appName: Mirchi 500 @ Ambari
   - name : Kanda Lasun Masala
     hName: कांदा लसून मसाला
     brand: Ambari
     options:
       - option: 5 ₹
         qtyOptionsRef: ambariMrp10Pack
+        appName: Kanda Lasun 5
       - option: 10 ₹
         qtyOptionsRef: ambariMrp10Pack
+        appName: Kanda Lasun 10
       - option: 100g
         qtyOptionsRef: ambari100gPack
+        appName: Kanda Lasun 100
       - option: 200g
         qtyOptionsRef: ambari100gPack
+        appName: Kanda Lasun 200
       - option: 500g
         qtyOptionsRef: ambari100gPack
+        appName: Kanda Lasun 500
   - name : Haldi Powder
     hName: हल्दी पाउडर
     brand: Ambari
     options:
       - option: 200g
         qtyOptionsRef: ambari100gPack
+        appName: Haldi 200
   - name : Mirchi Powder
     hName: मिर्च पाउडर
     brand: Gajgouri
     options:
       - option: 1 Kg
         qtyOptionsRef: gajgouri1KgPack
+        appName: Mirchi 1kg @ GG
   - name : Haldi Powder
     hName: हल्दी पाउडर
     brand: Gajgouri
     options:
       - option: 1 Kg
         qtyOptionsRef: gajgouri1KgPack
+        appName: Haldi 1kg GG
   - name : Kanda Lasun Masala
     hName: कांदा लसून मसाला
     brand: Gajgouri
     options:
       - option: 1 Kg
         qtyOptionsRef: gajgouri1KgPack
+        appName: Kanda Lasun 1kg GG
   - name : Tea Powder
     hName: चाय पाउडर
     brand: Gajgouri
     options:
       - option: 1 Kg
         qtyOptionsRef: gajgouri1KgPack
+        appName: Tea Powder GG
   - name : Soya Sauce
     hName: सोया सॉस
     brand: Navkar
     options:
       - option: Bottle
         qtyOptionsRef: navkarBottlePack
+        appName: Soya Sauce @ Navkar
       - option: Can
         qtyOptionsRef: navkarCanPack
+        appName: Soya Sauce Can
   - name : Chilly Sauce
     hName: चिली सॉस
     brand: Navkar
     options:
       - option: Bottle
         qtyOptionsRef: navkarBottlePack
+        appName: Chilli Sauce @ Navkar
       - option: Can
         qtyOptionsRef: navkarCanPack
+        appName: Chilli Sauce Can
   - name : Snacks Sauce
     hName: स्नैक सॉस
     brand: Navkar
     options:
       - option: Bottle
         qtyOptionsRef: navkarBottlePack
+        appName: Snacks Sauce @ Navkar
       - option: Can
         qtyOptionsRef: navkarCanPack
+        appName: Snacks Sauce Can
   - name : Green Chilly Sauce
     hName: ग्रीन चिली सॉस
     brand: Navkar
     options:
       - option: Bottle
         qtyOptionsRef: navkarBottlePack
+        appName: Green Chilli Sauce @ Navkar
   - name : Venigar
     hName: विनेगर
     brand: Navkar
     options:
       - option: Bottle
         qtyOptionsRef: navkarBottlePack
+        appName: Venigar
   - name : Schezwan Chutney
     hName: शेज़वान चटनी
     brand: Chings
     options:
       - option: 10 ₹
         qtyOptionsRef: chingsMasala10Pack
+        appName: S Chutney
       - option: 250g
         qtyOptionsRef: chingsMasala250gPack
+        appName: S Chutney 250
   - name : Noodles Masala
     hName: नूडल्स मसाला
     brand: Chings
     options:
       - option: 10 ₹
         qtyOptionsRef: chingsMasala10Pack
+        appName: Noodles Masala
   - name : Fried Rice Masala
     hName: फ्राइड राइस मसाला
     brand: Chings
     options:
       - option: 10 ₹
         qtyOptionsRef: chingsMasala10Pack
+        appName: Rice Masala
   - name : Manchurian Masala
     hName: मंचूरियन मसाला
     brand: Chings
     options:
       - option: 10 ₹
         qtyOptionsRef: chingsMasala10Pack
+        appName: Manchurian Masala
   - name : Manchao Soup
     hName: मंचाओ सूप
     brand: Chings
     options:
       - option: 10 ₹
         qtyOptionsRef: chingsMasala10Pack
+        appName: Manchao Soup
   - name : Soya Sauce
     hName: सोया सॉस
     brand: Chings
     options:
       - option: Bottle
         qtyOptionsRef: navkarBottlePack
+        appName: Soya Sauce @ Chings
   - name : Chilly Sauce
     hName: चिली सॉस
     brand: Chings
     options:
       - option: Bottle
         qtyOptionsRef: navkarBottlePack
+        appName: Chilli Sauce @ Chings
   - name : Green Chilly Sauce
     hName: ग्रीन चिली सॉस
     brand: Chings
     options:
       - option: Bottle
         qtyOptionsRef: navkarBottlePack
+        appName: Green Chilli Sauce @ Chings
   - name : White Pepper Powder
     hName: सफेद मिर्च पाउडर
     brand: Star Zing
     options:
       - option: 500g
         qtyOptionsRef: starZing500gPack
+        appName: White pepper pow
   - name : Black Pepper Powder
     hName: काली मिर्च पाउडर
     brand: Star Zing
     options:
       - option: 500g
         qtyOptionsRef: starZing500gPack
+        appName: Black pepper pow
   - name : Chat Masala
     hName: चाट मसाला
     brand: Star Zing
     options:
       - option: 500g
         qtyOptionsRef: starZing500gPack
+        appName: Chat 500
   - name : Amchur Powder
     hName: अमचूर पाउडर
     brand: Star Zing
     options:
       - option: 1 Kg
         qtyOptionsRef: starZing500gPack
+        appName: Amchoor 1kg
   - name : Jeera Powder
     hName: जीरा पाउडर
     brand: Star Zing
     options:
       - option: 500g
         qtyOptionsRef: starZing500gPack
+        appName: Jeera Pow 500
   - name : Jaljeera Powder
     hName: जलजीरा पाउडर
     brand: Star Zing
     options:
       - option: 500g
         qtyOptionsRef: starZing500gPack
+        appName: Jaljeera 500
   - name : Ginger Garlic Paste
     hName: अदरक लहसुन पेस्ट
     brand: Other Masale
     options:
       - option: 5 ₹
         qtyOptionsRef: chingsMasala10Pack
+        appName: GG Paste MRP 5
       - option: 200g
         qtyOptionsRef: sj250gPack
+        appName: GG Paste 200
   - name : Pasta Masala
     hName: पास्ता मसाला
     brand: Other Masale
     options:
       - option: 5 ₹
         qtyOptionsRef: chingsMasala10Pack
+        appName: Pasta Masala
   - name : PlusFood Jeera
     hName: प्लसफूड जीरा
     brand: DA Patel
     options:
       - option: 50g
         qtyOptionsRef: genericKgPack
+        appName: Jeera 50 @ PF
       - option: 100g
         qtyOptionsRef: genericKgPack
+        appName: Jeera 100 @ PF
       - option: 250g
         qtyOptionsRef: genericKgPack
+        appName: Jeera 250 @ PF
       - option: 1 Kg
         qtyOptionsRef: genericKgPack
+        appName: Jeera 1kg @ PF
   - name : Select Jeera
     hName: सेलेक्ट जीरा
     brand: DA Patel
     options:
       - option: 50g
         qtyOptionsRef: genericKgPack
+        appName: Jeera 50 @ Select
       - option: 100g
         qtyOptionsRef: genericKgPack
+        appName: Jeera 100 @ Select
       - option: 250g
         qtyOptionsRef: genericKgPack
+        appName: Jeera 250 @ Select
       - option: 1 Kg
         qtyOptionsRef: genericKgPack
+        appName: Jeera 1kg @ Select
   - name : PlusFood Rai ( Small )
     hName: प्लसफूड राई
     brand: DA Patel
     options:
       - option: 50g
         qtyOptionsRef: genericKgPack
+        appName: Rai 50
       - option: 100g
         qtyOptionsRef: genericKgPack
+        appName: Rai 100
       - option: 250g
         qtyOptionsRef: genericKgPack
+        appName: Rai 250
   - name : PlusFood Rai ( Jad )
     hName: प्लसफूड राई
     brand: DA Patel
     options:
       - option: 50g
         qtyOptionsRef: genericKgPack
+        appName: Jad Rai 50
       - option: 100g
         qtyOptionsRef: genericKgPack
+        appName: Jad Rai 100
       - option: 250g
         qtyOptionsRef: genericKgPack
+        appName: Jad Rai 250
   - name : PlusFood Ajwain
     hName: प्लसफूड अजवाइन
     brand: DA Patel
     options:
       - option: 50g
         qtyOptionsRef: genericKgPack
+        appName: Ajwain 50 @ PF
       - option: 100g
         qtyOptionsRef: genericKgPack
+        appName: Ajwain 100 @ PF
       - option: 250g
         qtyOptionsRef: genericKgPack
+        appName: Ajwain 250 @ PF
   - name : Select Till
     hName: सेलेक्ट तिल
     brand: DA Patel
     options:
       - option: Loose
         qtyOptionsRef: genericKgPack
+        appName: Till loose @ Select
       - option: 1 Kg
-        qtyOptionsRef: genericKgPack\
+        qtyOptionsRef: genericKgPack
+        appName: Till 1Kg @ Select
   - name : PlusFood Haldi Powder
     hName: प्लसफूड हल्दी पाउडर
     brand: DA Patel
     options:
       - option: 50g
         qtyOptionsRef: genericKgPack
+        appName: Haldi 50 PF
       - option: 100g
         qtyOptionsRef: genericKgPack
+        appName: Haldi 100 @ PF
       - option: 200g
         qtyOptionsRef: genericKgPack
+        appName: Haldi 200 @ PF
   - name : PlusFood Dhana Powder
     hName: प्लसफूड धनिया पाउडर
     brand: DA Patel
     options:
       - option: 50g
         qtyOptionsRef: genericKgPack
+        appName: Dhana 50 PF
       - option: 100g
         qtyOptionsRef: genericKgPack
+        appName: Dhana 100 @ PF
       - option: 200g
         qtyOptionsRef: genericKgPack
+        appName: Dhana 200 @ PF
   - name : PlusFood Khuskhus
     hName: प्लसफूड खसखस
     brand: DA Patel
     options:
       - option: 20g
         qtyOptionsRef: genericKgPack
+        appName: Khuskhus 20 @ Plus Food
       - option: 50g
         qtyOptionsRef: genericKgPack
+        appName: Khuskhus 50 @ Plus Food
       - option: 500g
         qtyOptionsRef: genericKgPack
+        appName: Khuskhus @ Plus Food
   - name : Kaju
     hName: काजू
     brand: Dry Fruits
     options:
       - option: Regular
         qtyOptionsRef: tinKgPack
+        appName: Kaju
       - option: Bold
         qtyOptionsRef: tinKgPack
+        appName: Kaju @ Bold
       - option: 250g
         qtyOptionsRef: boxKgPack
-      - option: Salted
-        qtyOptionsRef: boxKgPack
-      - option: Masala
-        qtyOptionsRef: boxKgPack
+        appName: Kaju 250
+#      - option: Salted
+#        qtyOptionsRef: boxKgPack
+#      - option: Masala
+#        qtyOptionsRef: boxKgPack
       - option: Tukda
         qtyOptionsRef: tinKgPack
+        appName: Tukda Kaju
       - option: Pakhli
         qtyOptionsRef: tinKgPack
   - name : Kaju Kani
@@ -726,78 +925,112 @@ products:
         qtyOptionsRef: boxKgPack
       - option: Extra
         qtyOptionsRef: boxKgPack
+        appName: Kaju Kani @ Extra
       - option: Shendana
         qtyOptionsRef: boxKgPack
+        appName: GN Kani
   - name : Khopra
     hName: खोपरा
     brand: खड़े मसाले
     options:
       - option: Rajapur
         qtyOptionsRef: genericKgPack
+        appName: Khopra
       - option: 10 Kg Box
         qtyOptionsRef: boxOnlyPack
+        appName: Khopra 10kg @ GC Box
       - option: 10 Kg Bag
-        qtyOptionsRef: boxOnlyPack
+        qtyOptionsRef: bagOnlyPack
+        appName: Khopra 10kg @ GC Bag
   - name : Pista
     hName: पिस्ता
     brand: Dry Fruits
     options:
       - option: Salted 250g
         qtyOptionsRef: boxKgPack
+        appName: S Pista 250 FS
       - option: Salted 1 Kg
         qtyOptionsRef: boxKgPack
+        appName: S Pista 1Kg
       - option: Plain / Green
         qtyOptionsRef: boxKgPack
+        appName: Green Pista
       - option: Pista Katri
         qtyOptionsRef: boxKgPack
+        appName: Pista Katri PK
   - name : Black Kharik
     hName: काला खरिक
     brand: Dry Fruits
     options:
       - option: Loose
         qtyOptionsRef: genericKgPack
+        appName: Black Kharik
       - option: Export
         qtyOptionsRef: genericKgPack
+        appName: Black Kharik @ Export
       - option: Royal
         qtyOptionsRef: genericKgPack
+        appName: Black Kharik @ Royal
       - option: Extra
         qtyOptionsRef: genericKgPack
+        appName: Black Kharik @ PP
       - option: Tukda
         qtyOptionsRef: genericKgPack
+        appName: Tukda Kharik
   - name : Yellow Kharik
     hName: पीला खरिक
     brand: Dry Fruits
     options:
       - option: Loose
         qtyOptionsRef: genericKgPack
+        appName: Yellow Kharik
       - option: Export
         qtyOptionsRef: genericKgPack
+        appName: Yellow Kharik @ Export
       - option: Royal
         qtyOptionsRef: genericKgPack
+        appName: Yellow Kharik @ Royal
       - option: Extra
         qtyOptionsRef: genericKgPack
+        appName: Yellow Kharik @ PP
       - option: Tukda
         qtyOptionsRef: genericKgPack
   - name : Kismish
     hName: किशमिश
     brand: Dry Fruits
     options:
+      - option: 100g
+        qtyOptionsRef: boxKgPack
+        appName: Kismish 100
       - option: 250g
         qtyOptionsRef: boxKgPack
+        appName: Kismish 250
       - option: 1 Kg
         qtyOptionsRef: boxKgPack
+        appName: Kismish 1kg
       - option: Loose
         qtyOptionsRef: boxKgPack
+        appName: Kismish
+  - name : Godambi
+    hName: गोडंबी
+    brand: Dry Fruits
+    options:
+      - option: Loose
+        qtyOptionsRef: genericKgPack
+        appName: Godambi
   - name : Black Kismish
     hName: काला किशमिश
     brand: Dry Fruits
     options:
       - option: Regular
         qtyOptionsRef: boxKgPack
+        appName: Black Kismish @ FS
       - option: Extra
         qtyOptionsRef: boxKgPack
+        appName: Black Kismish @ Carnival
       - option: Seedless
         qtyOptionsRef: boxKgPack
+        appName: Black Kismish @ Seedless
   - name : Akhrot
     hName: अखरोट
     brand: Dry Fruits
@@ -808,16 +1041,17 @@ products:
         qtyOptionsRef: boxKgPack
       - option: 2 pcs - Loose
         qtyOptionsRef: boxKgPack
+        appName: Akhrot Magaj loose
       - option: Whole / With Shell
         qtyOptionsRef: boxKgPack
+        appName: Akhrot whole
   - name : Anjeer
     hName: अंजीर
     brand: Dry Fruits
     options:
-      - option: Regular - 250g
+      - option: 250g
         qtyOptionsRef: boxKgPack
-      - option: Extra - 250g
-        qtyOptionsRef: boxKgPack
+        appName: Anjeer 250
       - option: Loose
         qtyOptionsRef: boxKgPack
   - name : Black Dates
@@ -826,14 +1060,17 @@ products:
     options:
       - option: Plate
         qtyOptionsRef: boxKgPack
+        appName: Plate Khajur
       - option: Pouch
         qtyOptionsRef: boxKgPack
+        appName: Pouch Khajur
       - option: Loose
         qtyOptionsRef: boxKgPack
       - option: Seedless
         qtyOptionsRef: boxKgPack
       - option: Kimiya
         qtyOptionsRef: boxKgPack
+        appName: Kimiya
   - name : Red Dates
     hName: लाल खजूर
     brand: Dry Fruits
@@ -848,21 +1085,26 @@ products:
     hName: मखाना
     brand: Dry Fruits
     options:
-      - option: Shrishti
+      - option: Srusti
         qtyOptionsRef: genericKgPack
+        appName: Srusti
       - option: Jai Ho
         qtyOptionsRef: genericKgPack
+        appName: Makhana @ JH
       - option: Amrit Bhog
         qtyOptionsRef: genericKgPack
+        appName: Makhana @ AB
       - option: 100g
         qtyOptionsRef: genericKgPack
+        appName: Makhana @ 100g
   - name : Jardalu
     hName: जर्दालू
     brand: Dry Fruits
     options:
-      - option: Regular
+      - option: 250g
         qtyOptionsRef: boxKgPack
-      - option: Extra
+        appName: Jardalu
+      - option: Loose
         qtyOptionsRef: boxKgPack
   - name : Jeera
     hName: जीरा
@@ -870,96 +1112,122 @@ products:
     options:
       - option: Loose
         qtyOptionsRef: genericKgPack
+        appName: Jeera loose
       - option: 50g
         qtyOptionsRef: genericKgPack
+        appName: Jeera 50
       - option: 100g
         qtyOptionsRef: genericKgPack
+        appName: Jeera 100
       - option: 250g
         qtyOptionsRef: genericKgPack
+        appName: Jeera 250
       - option: 1 Kg
         qtyOptionsRef: genericKgPack
+        appName: Jeera 1kg
   - name : Rai
     hName: राई
     brand: खड़े मसाले
     options:
       - option: Barik
         qtyOptionsRef: genericKgPack
+        appName: Rai
       - option: Jad
         qtyOptionsRef: genericKgPack
+        appName: Jad Rai
       - option: Yellow
         qtyOptionsRef: genericKgPack
+        appName: Yellow Rai
   - name : Sabut Haldi
     hName: हळकुंड
     brand: खड़े मसाले
     options:
       - option: Regular
         qtyOptionsRef: genericKgPack
+        appName: Sabut Haldi @ GG
       - option: Selam
         qtyOptionsRef: genericKgPack
+        appName: Sabut Haldi @ PK
       - option: Selam Bold
         qtyOptionsRef: genericKgPack
+        appName: Sabut Haldi @ Jumbo
   - name : Souff
     hName: सौंफ
     brand: खड़े मसाले
     options:
       - option: Badi
         qtyOptionsRef: genericKgPack
+        appName: B Souf
       - option: Barik / Lucknow
         qtyOptionsRef: genericKgPack
+        appName: L Souf
       - option: Bhajki
         qtyOptionsRef: genericKgPack
+        appName: Bhajki Souf
   - name : Till
     hName: तिल
     brand: खड़े मसाले
     options:
       - option: White - Gavran
         qtyOptionsRef: genericKgPack
+        appName: Till loose
       - option: White - Polished
         qtyOptionsRef: genericKgPack
+        appName: Polish Till
       - option: Black
         qtyOptionsRef: genericKgPack
+        appName: Black Till Extra
       - option: Pooja
         qtyOptionsRef: genericKgPack
+        appName: Pooja Till
   - name : Badian / Star Phool
     hName: बादियन / स्टार फूल
     brand: खड़े मसाले
     options:
       - option: Regular
         qtyOptionsRef: costlyMasaleKgPack
+        appName: Badian @ Regular
       - option: Extra
         qtyOptionsRef: costlyMasaleKgPack
+        appName: Badian @ Extra
   - name : Lavang
     hName: लवंग
     brand: खड़े मसाले
     options:
       - option: Loose
         qtyOptionsRef: costlyMasaleKgPack
+        appName: Lavang
   - name : Kalimiri
     hName: कालीमिरी
     brand: खड़े मसाले
     options:
       - option: Loose
         qtyOptionsRef: costlyMasaleKgPack
+        appName: Miri
   - name : Methi
     hName: मेथी
     brand: खड़े मसाले
     options:
       - option: Loose
         qtyOptionsRef: genericKgPack
+        appName: Methi
   - name : Dhania
     hName: धनिया
     brand: खड़े मसाले
     options:
       - option: Loose
         qtyOptionsRef: genericKgPack
+        appName: Sabut Dhana
   - name : Elaichi
     hName: इलायची
     brand: खड़े मसाले
     options:
       - option: Loose 
         qtyOptionsRef: costlyMasaleKgPack
+        appName: Elaichi
       - option: 5g
         qtyOptionsRef: costlyMasaleKgPack
+        appName: Elaichi @ 5g
       - option: 10g
         qtyOptionsRef: costlyMasaleKgPack
   - name : Tejpan
@@ -967,121 +1235,147 @@ products:
     brand: खड़े मसाले
     options:
       - option: Loose
-        qtyOptionsRef: boxKgPack
+        qtyOptionsRef: genericKgPack
+        appName: Tejpan
   - name : Masala Elaichi
     hName: मसाला इलायची
     brand: खड़े मसाले
     options:
       - option: Loose 
         qtyOptionsRef: costlyMasaleKgPack
+        appName: Masala Elaichi
   - name : Sunth
     hName: सोंठ
     brand: खड़े मसाले
     options:
       - option: Loose
         qtyOptionsRef: boxKgPack
+        appName: Sunth
   - name : Dagadphool
     hName: रामपात्रि
     brand: खड़े मसाले
     options:
       - option: Loose
         qtyOptionsRef: costlyMasaleKgPack
+        appName: Dagad Phool
   - name : Rampatri
     hName: रामपात्रि
     brand: खड़े मसाले
     options:
       - option: Loose
         qtyOptionsRef: boxKgPack
+        appName: Rampatri
   - name : Jaipatri
     hName: जावित्री
     brand: खड़े मसाले
     options:
       - option: Loose
         qtyOptionsRef: boxKgPack
+        appName: Jaipatri
   - name : Khuskhus
     hName: खसखस
     brand: खड़े मसाले
     options:
       - option: 20g
         qtyOptionsRef: boxKgPack
+        appName: Khuskhus 20
       - option: 50g
         qtyOptionsRef: boxKgPack
+        appName: Khuskhus 50
       - option: 1 Kg
         qtyOptionsRef: boxKgPack
+        appName: Khuskhus
   - name : Jaifal
     hName: जायफल
     brand: खड़े मसाले
     options:
       - option: Loose
         qtyOptionsRef: boxKgPack
+        appName: Jaifal
   - name : Nakeshwar
     hName: नकेश्वर
     brand: खड़े मसाले
     options:
       - option: Loose
         qtyOptionsRef: boxKgPack
+        appName: Nakeshwar
   - name : Kapurchini
     hName: कपूरचिनी
     brand: खड़े मसाले
     options:
       - option: Loose
         qtyOptionsRef: boxKgPack
+        appName: Kapurchini
   - name : Dink / Gondh
     hName : गोंद
     brand: Others
     options:
       - option: Regular
         qtyOptionsRef: genericKgPack
+        appName: Dink @ Regular
       - option: White
         qtyOptionsRef: genericKgPack
+        appName: Dink @ White
       - option: Kani
         qtyOptionsRef: genericKgPack
+        appName: Dink @ Kani
   - name : Pasta
     hName: पास्ता
     brand: Others
     options:
       - option: Elbow
         qtyOptionsRef: genericKgPack
+        appName: Pasta @ Macaroni
       - option: Spring
         qtyOptionsRef: genericKgPack
+        appName: Pasta @ Spiral
       - option: Penne
         qtyOptionsRef: genericKgPack
+        appName: Pasta @ Penne
   - name : Phutane
     hName: फूटाने
     brand: Others
     options:
       - option: Salted / Black
         qtyOptionsRef: genericKgPack
+        appName: Phutane @ Salted
       - option: Plain / Yellow
         qtyOptionsRef: genericKgPack
+        appName: Phutane @ Yellow
   - name : Mukhwas
     hName: मुखवास
     brand: Others
     options:
-      - option: India
+      - option: Indian
         qtyOptionsRef: genericKgPack
+        appName: Indian Mukhwas
       - option: Sugam 20 ₹
         qtyOptionsRef: chingsMasala10Pack
+        appName: Sugam 40
       - option: Sugam 40 ₹
         qtyOptionsRef: chingsMasala10Pack
+        appName: Sugam 80
   - name : Popcorn
     hName: फूटाने
     brand: Others
     options:
       - option: Loose
         qtyOptionsRef: genericKgPack
+        appName: Popcorn
   - name : Peanut / Shendana
     hName: शेंगदाना
     brand: Others
     options:
       - option: Salted
         qtyOptionsRef: boxKgPack
+        appName: Peanut
   - name : Maggie Masala
     hName: मैगी मसाला
     brand: Other Masale
     options:
       - option: 5 ₹
         qtyOptionsRef: chingsMasala10Pack
+        appName: Maggie Masala
   - name : Navjeevan Hing Powder
     hName: नवजीवन हींग
     brand: Other Masale
@@ -1090,251 +1384,331 @@ products:
         qtyOptionsRef: chingsMasala10Pack
       - option: 50g
         qtyOptionsRef: boxKgPack
+        appName: Hing 50 @ Nav
       - option: 100g
         qtyOptionsRef: boxKgPack
+        appName: Hing 100 @ Nav
+      - option: 200g
+        qtyOptionsRef: boxKgPack
+        appName: Hing 200 Nav
       - option: 1 Kg
         qtyOptionsRef: boxKgPack
+        appName: Hing Hing 1kg Nav
   - name : LG Hing Powder
     hName: एलजी हींग
     brand: Other Masale
     options:
       - option: 50g
         qtyOptionsRef: boxKgPack
+        appName: Hing 50 @ LG
       - option: 100g
         qtyOptionsRef: boxKgPack
+        appName: Hing 100 @ LG
   - name : Khada Hing
     hName: नवजीवन हींग
     brand: Other Masale
     options:
       - option: Black
         qtyOptionsRef: genericKgPack
+        appName: Black Hing @ loose
       - option: Brown
         qtyOptionsRef: genericKgPack
+        appName: Brown Hing
       - option: Navjeevan Kabuli
         qtyOptionsRef: boxKgPack
+        appName: Hira Hing Navjeevan
   - name : Govardhan Ghee
     hName: गोवर्धन घी
     brand: Others
     options:
       - option: 200 ml
         qtyOptionsRef: navkarBottlePack
+        appName: Ghee 200
       - option: 500 ml
         qtyOptionsRef: navkarBottlePack
+        appName: Ghee 500
       - option: 1 Ltr
         qtyOptionsRef: navkarBottlePack
+        appName: Ghee 1ltr
   - name : Papad
     hName: पापड़
     brand: Others
     options:
       - option: Applam / Kerala
         qtyOptionsRef: papadKgPack
+        appName: Papad Kerala
       - option: Manavir
         qtyOptionsRef: papadKgPack
+        appName: Papad Mahavir
       - option: Sudarshan
         qtyOptionsRef: papadKgPack
+        appName: Papad Sudarshan
       - option: Udad Disco 
         qtyOptionsRef: papadKgPack
+        appName: Udad Disco
       - option: Nagli Disco
         qtyOptionsRef: papadKgPack
+        appName: Nagli Disco
   - name : Imli
     hName: इमली
     brand: Others
     options:
       - option: Black
         qtyOptionsRef: genericKgPack
+        appName: Imli @ Regular
       - option: Red
         qtyOptionsRef: genericKgPack
+        appName: Imli @ NP
   - name : Amsool
     hName: आमसूल
     brand: Others
     options:
       - option: 1 Kg
         qtyOptionsRef: boxKgPack
+        appName: Amsool
   - name : Sagar Milk Powder
     hName: सागर दूध पाउडर
     brand: Others
     options:
       - option: 500g
         qtyOptionsRef: genericKgPack
+        appName: Sagar SMP
   - name : Kheer Masala
     hName: खीर मसाला
     brand: Other Masale
     options:
       - option: Aachi
         qtyOptionsRef: chingsMasala10Pack
+        appName: Kheer Mix @ Aachi
       - option: BSW
         qtyOptionsRef: chingsMasala10Pack
+        appName: Kheer Mix @ BSW
   - name : Rajkamal Mirchi Powder
     hName: राजकमल मिर्च पाउडर
     brand: Other Masale
     options:
       - option: 500g
         qtyOptionsRef: ambari100gPack
+        appName: Mirchi 500 @ Rajkamal
       - option: 1 Kg
         qtyOptionsRef: ambari100gPack
+        appName: Mirchi 1kg @ Rajkamal
   - name : Kashmiri Mirchi Powder
     hName: कश्मीरी मिर्च पाउडर
     brand: Other Masale
     options:
       - option: Appu 500g
         qtyOptionsRef: genericKgPack
+        appName: Kashmiri 500 Appu
   - name : Haldi Powder
     hName: हल्दी पाउडर
     brand: Other Masale
     options:
       - option: 500g
         qtyOptionsRef: genericKgPack
+        appName: Haldi 500
   - name : Dhana Powder RajaRani
     hName: धनिया पाउडर राजारानी
     brand: Other Masale
     options:
       - option: 500g
         qtyOptionsRef: genericKgPack
+        appName: Dhana 500
   - name : Kothmire Sunday Special
     hName: कोथमीर संडे स्पेशल
     brand: Other Masale
     options:
       - option: 10 ₹
         qtyOptionsRef: chingsMasala10Pack
+        appName: Kothmire 10
       - option: 100g
         qtyOptionsRef: genericKgPack
+        appName: Kothmire 100
       - option: 200g
         qtyOptionsRef: genericKgPack
+        appName: Kothmire 200
       - option: 500g
         qtyOptionsRef: genericKgPack
+        appName: Kothmire 500
   - name : Dhana Dal
     hName: धना दाल
     brand: Others
     options:
       - option: 200g
         qtyOptionsRef: genericKgPack
+        appName: Dhana Dal 200
   - name : Salt
     hName: नमक
     brand: Others
     options:
       - option: Black - Powder
         qtyOptionsRef: genericKgPack
+        appName: Black Salt P
       - option: Black - Khada
         qtyOptionsRef: genericKgPack
+        appName: Black Salt S
       - option: Senda - Powder
         qtyOptionsRef: genericKgPack
+        appName: Senda Namak
   - name : Seeds
     hName: बीज
     brand: Others
     options:
       - option: Pumkin
         qtyOptionsRef: genericKgPack
+        appName: Pumkin Seeds
       - option: Chia
         qtyOptionsRef: genericKgPack
+        appName: Chia Seeds
       - option: Sunflower
         qtyOptionsRef: genericKgPack
+        appName: Sunflower Seeds
       - option: Javas / Alsi
         qtyOptionsRef: genericKgPack
+        appName: Javas
       - option: Sabja
         qtyOptionsRef: genericKgPack
+        appName: Sabja
       - option: Adiv / Aliv
         qtyOptionsRef: genericKgPack
+        appName: Adiv
       - option: Bal Sepa
         qtyOptionsRef: genericKgPack
+        appName: Bal Sepa
   - name : Magaj
     hName: मगज
     brand: Others
     options:
       - option: Tumba / Small
         qtyOptionsRef: genericKgPack
+        appName: Magaj 1Kg @ Small
       - option: Regular
         qtyOptionsRef: genericKgPack
+        appName: Magaj 1Kg @ AM
       - option: Premium
         qtyOptionsRef: genericKgPack
+        appName: Magaj 1Kg @ AM Premium
   - name : Sevai
     hName: बीज
     brand: Others
     options:
       - option: Rosted - Genda
         qtyOptionsRef: genericDzPack
+        appName: Sevai @ Ro
       - option: A1
-        qtyOptionsRef: chingsMasala10Pack
-  - name : Sevai
-    hName: सेवई
-    brand: Others
-    options:
-      - option: Rosted - Genda
-        qtyOptionsRef: genericDzPack
-      - option: A1
-        qtyOptionsRef: chingsMasala10Pack
+        qtyOptionsRef: a1SevaiPack
+        appName: Sevai @ A1
   - name : Ajino Moto
     hName: अजिनो मोटो
     brand: Others
     options:
       - option: Loose
         qtyOptionsRef: genericKgPack
+        appName: Ajino
   - name : Cornflour
     hName: कॉर्नफ्लोर
     brand: Others
     options:
       - option: 1 Kg
         qtyOptionsRef: genericKgPack
+        appName: Cornflour 1Kg
+  - name : Baby Kesar
+    hName: बेबी केसर
+    brand: Others
+    options:
+      - option: 25 ₹
+        qtyOptionsRef: chingsMasala10Pack
+      - option: 1/4 g
+        qtyOptionsRef: babyKesar250mgPack
+        appName: Kesar 1/4 g
+      - option: 1/2 g
+        qtyOptionsRef: babyKesarPack
+        appName: Kesar 1/2 g
+      - option: 1 g
+        qtyOptionsRef: babyKesarPack
+        appName: Kesar 1g
   - name : Citric
     hName: नींबू सत
     brand: Others
     options:
       - option: 1 Kg
         qtyOptionsRef: genericKgPack
+        appName: Citric
   - name : Bush Colour
     hName: बुश रंग
     brand: Others
     options:
       - option: Orange Red
         qtyOptionsRef: bushColourPack
+        appName: Orange Red Bush
       - option: Tomato Red
         qtyOptionsRef: bushColourPack
+        appName: Tomato Red Bush
       - option: Lemon Yellow
         qtyOptionsRef: bushColourPack
+        appName: Lemon Yellow Bush
       - option: Apple Green
         qtyOptionsRef: bushColourPack
+        appName: Apple Green Bush
       - option: Kesri
         qtyOptionsRef: bushColourPack
+        appName: Kesri Bush
       - option: Chocolate Brown
         qtyOptionsRef: bushColourPack
+        appName: Chocolate Brown Bush
   - name : 3 Parrot Colour 11 ₹
     hName: 3 पर्रोट कलर 11 ₹
     brand: Others
     options:
       - option: Orange Red
-        qtyOptionsRef: chingsMasala10Pack
+        qtyOptionsRef: mrp11Color
+        appName: Orange Red 10
       - option: Tomato Red
-        qtyOptionsRef: chingsMasala10Pack
+        qtyOptionsRef: mrp11Color
+        appName: Tomato Red 10
       - option: Lemon Yellow
-        qtyOptionsRef: chingsMasala10Pack
+        qtyOptionsRef: mrp11Color
+        appName: Lemon Yellow 10
       - option: Apple Green
-        qtyOptionsRef: chingsMasala10Pack
+        qtyOptionsRef: mrp11Color
+        appName: Apple Green 10
       - option: Kesri
-        qtyOptionsRef: chingsMasala10Pack
+        qtyOptionsRef: mrp11Color
+        appName: Kesri 10
   - name : 3 Parrot Colour 100g
     hName: 3 पर्रोट कलर 100g
     brand: Others
     options:
       - option: Orange Red
         qtyOptionsRef: boxKgPack
+        appName: Orange Red 100
       - option: Tomato Red
         qtyOptionsRef: boxKgPack
+        appName: Tomato Red 100
       - option: Lemon Yellow
         qtyOptionsRef: boxKgPack
       - option: Apple Green
         qtyOptionsRef: boxKgPack
+        appName: Apple Green 100
       - option: Kesri
         qtyOptionsRef: boxKgPack
+        appName: Kesri 100
       - option: Chocolate Brown
         qtyOptionsRef: boxKgPack
+        appName: Chocolate Brown 100
   - name : Noodles
     hName: नूडल्स
     brand: Others
     options:
       - option: Yellow
         qtyOptionsRef: boxOnlyPack
+        appName: Noodles @ Yellow
       - option: White
         qtyOptionsRef: boxOnlyPack
+        appName: Noodles @ White
       - option: Chintoo
         qtyOptionsRef: genericDzPack
+        appName: Chintoo
       - option: Chintoo Masala
         qtyOptionsRef: genericDzPack
+        appName: Chintoo Masala
