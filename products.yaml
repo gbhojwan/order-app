@@ -61,6 +61,12 @@ qtyOptionsSets:
         mul: 1
     - qtyType: Bag
       qtyValues: [1, 2, 3, 4, 5]
+  - name : gajgouriAcharPack
+    qtyTypeOptions:
+    - qtyType: Jar
+      qtyValues: [1, 2, 3]
+    - qtyType: Box
+      qtyValues: [1, 2, 3, 4, 5]
   - name : gajgouri1KgPack
     qtyTypeOptions:
     - qtyType: Kg
@@ -613,6 +619,13 @@ products:
       - option: 1 Kg
         qtyOptionsRef: gajgouri1KgPack
         appName: Tea Powder GG
+  - name : Aachar
+    hName: आचार
+    brand: Gajgouri
+    options:
+      - option: 5 Kg
+        qtyOptionsRef: gajgouriAcharPack
+        appName: Aachar GG
   - name : Soya Sauce
     hName: सोया सॉस
     brand: Navkar
