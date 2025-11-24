@@ -401,7 +401,7 @@ products:
         appName: Haldi 200 @ Everest
       - option: 500g
         qtyOptionsRef: everest500gPack
-        appName: Haldi 200 @ Everest
+        appName: Haldi 500 @ Everest
   - name : Tikhalal Mirchi Powder
     hName: तिखालाल मिर्च पाउडर
     brand: Everest Powder
@@ -604,7 +604,7 @@ products:
     options:
       - option: 1 Kg
         qtyOptionsRef: gajgouri1KgPack
-        appName: Haldi 1kg GG
+        appName: Haldi 1Kg GG
   - name : Kanda Lasun Masala
     hName: कांदा लसून मसाला
     brand: Gajgouri
