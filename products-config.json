@@ -1,0 +1,54 @@
+{
+  "whatsappNumber": "919960448859",
+  "rfqRetentionHours": 4,
+  "products": [
+    {
+      "id": "ruchira-rajgira-pith",
+      "name": "Ruchira Rajgira Pith",
+      "image": "assets/ruchira_rajgira_pith.jpg",
+      "description": "1Kg ( 200g x 5 pouches )",
+      "unit": "Kg",
+      "weights": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "id": "ruchira-singada-pith",
+      "name": "Ruchira Singada Pith",
+      "image": "assets/ruchira_singada_pith.jpg",
+      "description": "1Kg ( 200g x 5 pouches )",
+      "unit": "Kg",
+      "weights": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "id": "ruchira-upwas-bhajni",
+      "name": "Ruchira Upwas Bhajni",
+      "image": "assets/ruchira_upwas_bhajni.jpg",
+      "description": "1Kg ( 200g x 5 pouches )",
+      "unit": "Kg",
+      "weights": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "id": "khandeshi-mutton-masala",
+      "name": "Khandeshi Mutton Masala",
+      "image": "assets/khandeshi-mutton-masala-500x500.webp",
+      "description": "1Kg ( 200g x 5 pouches )",
+      "unit": "Kg",
+      "weights": [
+        1,
+        2,
+        5
+      ]
+    }
+  ]
+}
